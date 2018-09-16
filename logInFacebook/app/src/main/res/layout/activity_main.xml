@@ -17,27 +17,32 @@
         android:layout_marginTop="60dp"
         />
     -->
-    <TextView
-        android:id="@+id/img_fb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="facebook"
-        android:textStyle="bold"
-        android:textSize="50dp"
-        android:textColor="@color/white"
-        android:layout_marginTop="70dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/edt_margin_bottom"
-        android:textAlignment="center"
-        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/form">
+        <TextView
+            android:id="@+id/img_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+
+            android:text="facebook"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:id="@+id/form">
         <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:background="@drawable/custom_textview"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="@dimen/edt_margin_left"
@@ -50,7 +55,7 @@
         <EditText
             android:id="@+id/edt_pass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_below="@+id/edt_email"
             android:background="@drawable/custom_textview"
             android:layout_marginLeft="@dimen/edt_margin_left"
